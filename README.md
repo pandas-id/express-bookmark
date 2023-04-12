@@ -10,7 +10,7 @@ Aplikasi ini dibuat untuk menambah pemahaman saya tentang NodeJs dan ExpressJs.
 ## Install
 
 * [NodeJs](https://nodejs.org/en) versi 19.6.1 atau di atasnya
-* [Nodemon](https://nodemon.io/)
+* [Nodemon](https://nodemon.io/) (opsional)
 
 1. Install package yang dibutuhkan
     ```zsh
