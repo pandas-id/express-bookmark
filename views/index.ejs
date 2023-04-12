@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <ol class="list-group list-group-numbered mt-3">
+        <% if (bookmark.length==0) { %>
+        <div class="alert alert-danger" role="alert">
+          Belum ada kategori,tambah kategori terlebih dahulu
+        </div>
+        <% } %>
+        <a href="/add" class="btn btn-outline-primary mt-3 mb-3">Tambah Kategori</a>
+        <% bookmark.forEach(category=> { %>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">
+              <%= category.title %>
+            </div>
+            <div>
+              <a class="badge bg-primary rounded-pill text-decoration-none"
+                href="/add/link/<%= category.title %>">Tambah</a>
+              <a class="badge bg-danger rounded-pill text-decoration-none"
+                href="/delete/<%= category.title %>">Hapus</a>
+              <a class="badge bg-success rounded-pill text-decoration-none"
+                href="/edit/<%= category.title %>">Ubah</a>
+              <a class="badge bg-info rounded-pill text-decoration-none"
+                href="/manage/<%= category.title %>">Kelola</a>
+            </div>
+            <ul>
+              <% category['links'].forEach(link=> { %>
+              <li>
+                <a href="<%= link.link %>"><%= link.title %></a>
+              </li>
+              <% }) %>
+            </ul>
+          </div>
+        </li>
+        <% }) %>
+      </ol>
+    </div>
+  </div>
+</div>

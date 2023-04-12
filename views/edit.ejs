@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h3 class="text-center"><%= category.title %></h3>
+      <form action="/edit" method="post">
+        <input type="hidden" name="category" value="<%= category.title %>">
+        <div class="mb-3">
+          <label for="category" class="form-label">Judul Materi</label>
+          <input type="text" class="form-control" id="category" name="newCategory" value="<%= category.title %>" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Simpan</button>
+      </form>
+    </div>
+  </div>
+</div>

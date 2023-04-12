@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2 class="text-center">
+        <%= category.title %>
+      </h2>
+      <a class="btn btn-outline-primary w-100 mt-3 mb-3" href="/add/link/<%= category.title %>">Tambah Link</a>
+      <table class="table">
+        <tbody>
+          <% category['links'].forEach(link => { %>
+          <tr>
+            <td>
+              <a href="<%= link.link %>"><%= link.title %></a>
+            </td>
+            <td>
+              <form action="/delete/link" method="post">
+                <input type="hidden" name="category" value="<%= category.title %>">
+                <input type="hidden" name="link" value="<%= link.link %>">
+                <button type="submit" class="btn btn-danger btn-sm badge">Hapus</button>
+              </form>
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

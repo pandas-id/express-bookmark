@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h3 class="text-center"><%= category %></h3>
+      <form action="/add/link" method="post">
+        <input type="hidden" name="category" value="<%= category %>">
+        <div class="mb-3" id="input-link-1">
+          <label for="links" class="form-label">Link artikel</label>
+          <input type="text" class="form-control" id="links" name="links">
+        </div>
+        <button type="submit" id="submit-button" class="btn btn-primary">Tambahkan</button>
+        <button type="button" id="add-input-button" class="btn btn-success float-end">Tambah Link</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- contentFor('script') %>
+<script type="text/javascript" src="/js/add-link.js"></script>
