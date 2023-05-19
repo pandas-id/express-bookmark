@@ -1,1 +1,5 @@
 - [ ] Gunakan DBMS (MongoDB)
+- [ ] Tambahkan Flash Message
+- [ ] Edit: Validasi judul baru tidak sama dengan judul lama
+- [ ] REST Full API
+- [ ] Bug: Bisa menambahkan nilai null ke url list
