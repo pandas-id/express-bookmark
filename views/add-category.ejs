@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <form action="/add" method="post">
+        <div class="mb-3">
+          <label for="category" class="form-label">Kategori</label>
+          <input type="text" class="form-control" id="category" name="category" required>
+        </div>
+        <div class="mb-3" id="input-link-1">
+          <label for="url" class="form-label">Link artikel</label>
+          <input type="text" class="form-control" id="url" name="url">
+        </div>
+        <button type="submit" id="submit-button" class="btn btn-primary">Tambahkan</button>
+        <button type="button" id="add-input-button" class="btn btn-success float-end">Tambah Link</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- contentFor('script') %>
+<script type="text/javascript" src="/js/add-link.js"></script>
