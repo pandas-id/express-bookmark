@@ -1,1 +1,36 @@
-[{"title":"Python Programming","links":[{"title":"Welcome to Python.org","link":"https://www.python.org/"},{"title":"Python - List Comprehension","link":"https://www.w3schools.com/python/python_lists_comprehension.asp"},{"title":"Object-Oriented Programming (OOP) in Python 3 – Real Python","link":"https://realpython.com/python3-object-oriented-programming/"}]},{"title":"Web Programming","links":[{"title":"HTML Tutorial","link":"https://www.w3schools.com/html/"},{"title":"Learn CSS","link":"https://web.dev/learn/css/"},{"title":"JavaScript Tutorial","link":"https://www.w3schools.com/js/"}]}]
+[
+  {
+    "title": "Python Programming",
+    "links": [
+      {
+        "title": "Welcome to Python.org",
+        "link": "https://www.python.org/"
+      },
+      {
+        "title": "Python - List Comprehension",
+        "link": "https://www.w3schools.com/python/python_lists_comprehension.asp"
+      },
+      {
+        "title": "Object-Oriented Programming (OOP) in Python 3 – Real Python",
+        "link": "https://realpython.com/python3-object-oriented-programming/"
+      }
+    ]
+  },
+  {
+    "title": "Web Programming",
+    "links": [
+      {
+        "title": "HTML Tutorial",
+        "link": "https://www.w3schools.com/html/"
+      },
+      {
+        "title": "Learn CSS",
+        "link": "https://web.dev/learn/css/"
+      },
+      {
+        "title": "JavaScript Tutorial",
+        "link": "https://www.w3schools.com/js/"
+      }
+    ]
+  }
+]
