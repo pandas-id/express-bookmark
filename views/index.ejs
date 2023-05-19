@@ -12,22 +12,22 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
           <div class="ms-2 me-auto">
             <div class="fw-bold">
-              <%= category.title %>
+              <%= category.category %>
             </div>
             <div>
               <a class="badge bg-primary rounded-pill text-decoration-none"
-                href="/add/link/<%= category.title %>">Tambah</a>
+                href="/add/link/<%= category._id %>">Tambah</a>
               <a class="badge bg-danger rounded-pill text-decoration-none"
-                href="/delete/<%= category.title %>">Hapus</a>
+                href="/delete/<%= category._id%>">Hapus</a>
               <a class="badge bg-success rounded-pill text-decoration-none"
-                href="/edit/<%= category.title %>">Ubah</a>
+                href="/edit/<%= category._id %>">Ubah</a>
               <a class="badge bg-info rounded-pill text-decoration-none"
-                href="/manage/<%= category.title %>">Kelola</a>
+                href="/manage/<%= category._id %>">Kelola</a>
             </div>
             <ul>
-              <% category['links'].forEach(link=> { %>
+              <% category['urls'].forEach(url=> { %>
               <li>
-                <a href="<%= link.link %>"><%= link.title %></a>
+                <a href="<%= url.url %>"><%= url.title %></a>
               </li>
               <% }) %>
             </ul>
