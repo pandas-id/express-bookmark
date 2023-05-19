@@ -2,20 +2,20 @@
   <div class="row">
     <div class="col-md-8">
       <h2 class="text-center">
-        <%= category.title %>
+        <%= document.category %>
       </h2>
-      <a class="btn btn-outline-primary w-100 mt-3 mb-3" href="/add/link/<%= category.title %>">Tambah Link</a>
+      <a class="btn btn-outline-primary w-100 mt-3 mb-3" href="/add/link/<%= document.id %>">Tambah Link</a>
       <table class="table">
         <tbody>
-          <% category['links'].forEach(link => { %>
+          <% document['urls'].forEach(url => { %>
           <tr>
             <td>
-              <a href="<%= link.link %>"><%= link.title %></a>
+              <a href="<%= url.url %>"><%= url.title %></a>
             </td>
             <td>
-              <form action="/delete/link" method="post">
-                <input type="hidden" name="category" value="<%= category.title %>">
-                <input type="hidden" name="link" value="<%= link.link %>">
+              <form action="/delete/url" method="post">
+                <input type="hidden" name="categoryId" value="<%= document._id %>">
+                <input type="hidden" name="urlId" value="<%= url._id %>">
                 <button type="submit" class="btn btn-danger btn-sm badge">Hapus</button>
               </form>
             </td>
